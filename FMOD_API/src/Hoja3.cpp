@@ -1,8 +1,11 @@
 #include "Hoja3.h"
+#include "Utils.h"
 #include <iostream>
 #include <conio.h>
 #include <chrono>
 #include <windows.h>
+#include <cctype>
+#include <string>  
 
 void Hoja3::initFMOD(FMOD_INITFLAGS flags = FMOD_INIT_NORMAL)
 {
@@ -22,26 +25,6 @@ void Hoja3::setListener(FMOD_VECTOR listenerPos = { 0,0,0 }, FMOD_VECTOR listene
 	ERRCHECK(system->set3DListenerAttributes(0, &listenerPos, &listenerVel, &up, &at));
 }
 
-void Hoja3::ERRCHECK(FMOD_RESULT result)
-{
-	if (result != FMOD_OK) {
-		std::cout << FMOD_ErrorString(result) << std::endl;
-		printf("FMOD error %d - %s", result, FMOD_ErrorString(result));
-		exit(-1);
-	}
-}
-
-void Hoja3::clearScreen(char fill)
-{
-	COORD tl = { 0,0 };
-	CONSOLE_SCREEN_BUFFER_INFO s;
-	HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
-	GetConsoleScreenBufferInfo(console, &s);
-	DWORD written, cells = s.dwSize.X * s.dwSize.Y;
-	FillConsoleOutputCharacter(console, fill, cells, tl, &written);
-	FillConsoleOutputAttribute(console, s.wAttributes, cells, tl, &written);
-	SetConsoleCursorPosition(console, tl);
-}
 
 void Hoja3::renderEj6(int dimensions, FMOD_VECTOR* listenerPos, FMOD_VECTOR* pos, Channel* channel)
 {

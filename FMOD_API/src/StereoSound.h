@@ -5,6 +5,7 @@
 enum class FADE_EVENT {
 	fadeIn = 0, fadeOut, mixSound, Undefined
 };
+
 class StereoSound
 {
 private:

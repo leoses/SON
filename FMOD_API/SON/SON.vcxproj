@@ -20,12 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Hoja3.cpp" />
+    <ClCompile Include="..\src\Hoja4.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\StereoSound.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Hoja3.h" />
+    <ClInclude Include="..\src\Hoja4.h" />
     <ClInclude Include="..\src\StereoSound.h" />
+    <ClInclude Include="..\src\Utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
