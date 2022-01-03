@@ -2,7 +2,7 @@
 #include <iostream>
 #include "fmod.hpp"
 #include "fmod_errors.h"
-#include <Windows.h>
+//#include <Windows.h>
 
 inline void ERRCHECK(FMOD_RESULT result)
 {
@@ -15,12 +15,18 @@ inline void ERRCHECK(FMOD_RESULT result)
 
 inline void clearScreen(char fill = ' ')
 {
-	COORD tl = { 0,0 };
+	//Forma 1: solo en windows, para Linux/Posixs, sustituir "cls" por "clear"
+	//system("cls");
+
+	printf("\033c");
+
+	//Solo en windows
+	/*COORD tl = { 0,0 };
 	CONSOLE_SCREEN_BUFFER_INFO s;
 	HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 	GetConsoleScreenBufferInfo(console, &s);
 	DWORD written, cells = s.dwSize.X * s.dwSize.Y;
 	FillConsoleOutputCharacter(console, fill, cells, tl, &written);
 	FillConsoleOutputAttribute(console, s.wAttributes, cells, tl, &written);
-	SetConsoleCursorPosition(console, tl);
+	SetConsoleCursorPosition(console, tl);*/
 }
