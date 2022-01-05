@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d90e8742-f5bc-4ca0-a3cc-a7a0bde65f8c}">
+		<property name="assetPath">
+			<value>Hoja 09 Muestras/steps2.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.14714583333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{df62dc6f-b75e-40e1-908a-8edf13202340}</destination>
+		</relationship>
+	</object>
+</objects>
