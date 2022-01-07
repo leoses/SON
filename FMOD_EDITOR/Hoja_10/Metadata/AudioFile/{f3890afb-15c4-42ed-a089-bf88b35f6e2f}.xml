@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f3890afb-15c4-42ed-a089-bf88b35f6e2f}">
+		<property name="assetPath">
+			<value>Maquina/maquina-02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4429931972789116</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{39fff953-c4a8-4b13-b566-85e920af9fda}</destination>
+		</relationship>
+	</object>
+</objects>

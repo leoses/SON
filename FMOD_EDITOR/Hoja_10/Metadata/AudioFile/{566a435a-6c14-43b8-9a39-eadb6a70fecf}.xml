@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{566a435a-6c14-43b8-9a39-eadb6a70fecf}">
+		<property name="assetPath">
+			<value>Musica/3DDMelodi.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>52.363628117913834</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{39fff953-c4a8-4b13-b566-85e920af9fda}</destination>
+		</relationship>
+	</object>
+</objects>
