@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{30863b6a-f33b-48b9-abcb-5553ff5ce242}">
+		<property name="assetPath">
+			<value>pajaro3.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.6268750000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{21af1b8a-0d1b-4ca0-ad8f-46b02c93a298}</destination>
+		</relationship>
+	</object>
+</objects>
